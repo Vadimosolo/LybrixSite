@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Lybrix</title>
+    <style>
+        body {
+            min-height: 200vh;
+            background: #0f0f0f;
+            color: white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+
+        h1 {
+            position: absolute;
+            top: -10px;
+            font-size: 48px;
+            margin-bottom: 0px;
+            color: #4A90E2;
+        }
+
+
+        #p1 {
+            position: absolute;
+            top: 60px;
+            margin-bottom: 0px;
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        #p2 {
+            position: absolute;
+            top: 160px;
+            margin-bottom: 0px;
+            font-size: 25px;
+            margin-bottom: 40px;
+        }
+
+        #p3 {
+            position: absolute;
+            top: 200px;
+            margin-bottom: 0px;
+            font-size: 45px;
+            margin-bottom: 40px;
+        }
+
+        #p4 {
+            position: absolute;
+            top: 250px;
+            margin-bottom: 0px;
+            font-size: 45px;
+            margin-bottom: 40px;
+        }
+
+        #p5 {
+            position: absolute;
+            top: 300px;
+            margin-bottom: 0px;
+            font-size: 45px;
+            margin-bottom: 40px;
+        }
+
+        #p6 {
+            position: absolute;
+            top: 350px;
+            margin-bottom: 0px;
+            font-size: 45px;
+            margin-bottom: 40px;
+        }
+
+        .btn-register {
+            position: absolute;
+            top: 500px;
+            margin-bottom: 0px;
+            padding: 20px 40px;
+            font-size: 22px;
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            .btn-register:hover {
+                background-color: #357ABD;
+                transform: scale(1.05);
+            }
+    </style>
+</head>
+
+<body>
+    <h1>Lybrix</h1>
+    <p id="p1">Welcome on project that has been inspired by Roblox!</p>
+    <p id="p2">This is a game launcher where you can:</p>
+    <p id="p3">Have fun in games created by real peoples</p>
+    <p id="p4">Meet new friends</p>
+    <p id="p5">Start being interested in programming</p>
+    <p id="p6">AND MUCH MORE!</p>
+    <button class="btn-register" onclick="window.location.href='register.html'">Join us today and have fun!</button>
+</body>
+</html>
+
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js')
+            .then(() => console.log('Service Worker зареєстровано'))
+            .catch(err => console.log('Помилка реєстрації Service Worker', err));
+    }
+</script>
+
+
